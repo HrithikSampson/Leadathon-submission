@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const _ = require('lodash');
 const express = require('express');
 const app = express();
-const fetch = require('node-fetch');
+//const fetch = require('node-fetch');
 //const response;
 const axios = require("axios");
 const cheerio = require("cheerio");
