@@ -83,7 +83,7 @@ app.listen(process.env.PORT ||3000,()=>{
 
         scrapeData();
 
-        console.log("Listening on port "+this.address().port);
+        console.log("Listening on port "+process.env.PORT ||3000);
 })
 app.get('/Autogenerate-closest/?*',(req,res)=>{
         map1 = root;
