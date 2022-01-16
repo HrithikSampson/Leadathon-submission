@@ -5,6 +5,8 @@ const app = express();
 //const fetch = require('node-fetch');
 //const response;
 const axios = require("axios");
+const dotenv = require('dotenv')
+dotenv.config();
 const cheerio = require("cheerio");
 const pretty = require("pretty");
 const moves = [];
@@ -77,11 +79,11 @@ let map1 = root;
         }
 //fetch().then((response)=>{
 
-app.listen(2500,()=>{
+app.listen(process.env.PORT ||3000,()=>{
 
         scrapeData();
 
-        console.log("Listening on port 2500!!");
+        console.log("Listening on port "+this.address().port);
 })
 app.get('/Autogenerate-closest/?*',(req,res)=>{
         map1 = root;
