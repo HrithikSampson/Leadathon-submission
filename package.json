@@ -1,0 +1,24 @@
+{
+  "name": "leadathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.17.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.1.6",
+    "pretty": "^2.0.0"
+  },
+  
+  "engines": {
+    "node": "16.x"
+  }
+}
